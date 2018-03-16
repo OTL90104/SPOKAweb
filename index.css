@@ -1,0 +1,227 @@
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        user-select:none;
+        }
+    .container{            
+        margin: 5px 20px;
+        }
+   /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #ffffff00; 
+        }
+ 
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+           background: rgba(93, 12, 11, 0.301); 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+         background: rgb(93,13,11); 
+        }
+        
+    .banner{
+            width: 100%;
+            height: 50vw;
+            background-image:url("used_photo/banner.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }     
+        
+        /* The SDC LOGO */
+        .SDC{
+            margin: 5px 20px;
+            z-index: 1;    
+            position: fixed;
+            top:0;
+            right:0;
+            width:62px;
+            height:100px;
+            -webkit-transition: height 1s;
+            /* For Safari 3.1 to 6.0 */
+            transition: height 1s;
+            overflow: hidden;
+        }
+        .SDC:hover {           
+            height: 100%;
+        }
+        .icon>a>i {
+            margin: 10px 15px;
+            font-size: 32px;           
+            z-index: 1;
+            color: rgb(218, 175, 130);            
+        }
+        .icon>a:nth-child(1) i:hover {
+            color: rgb(64,93,155);
+            transform: scale(1.5);
+        }
+        .icon>a:nth-child(2) i:hover {
+            color: rgb(29,161,242);
+            transform: scale(1.5);       
+        }
+        .icon>a:nth-child(3) i:hover {
+            color: rgb(3, 185, 0);
+            transform: scale(1.5);         
+        }
+        .icon>a:nth-child(4) i:hover {
+            color: white;
+            transform: scale(1.5);         
+        }
+        .icon>a:nth-child(5) i:hover {
+            transform: scale(1.5);
+            color:white;
+            border-radius: 18.5%;
+            background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);         
+        }
+
+
+/* title */
+
+        h1{
+            font-size: 8vw;
+            font-family: 'Cinzel Decorative', cursive;
+            color: rgb(93,13,11);
+            text-shadow: 3px 3px 4px #dddddd;
+            padding-top: 22vw;
+            padding-left: 10vw;
+            animation-name: h1;
+            animation-duration: 5s;
+            animation-delay: -1s;
+            animation-timing-function: ease;
+        }        
+        h2{
+            font-size: 4vw;
+            font-family: 'Cinzel Decorative', cursive;
+            color: rgb(93,13,11);
+            text-shadow: 2px 2px 4px #dddddd;            
+            padding-left: 10vw;
+            
+            animation-name: h2;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-timing-function: ease;
+        }
+
+        /* the GO buttom */
+        .banner>a {            
+            position: relative;            
+            left: 39vw;
+            padding:0 1vw;
+            border-radius: 5px;
+            background-color:#123456;
+            box-shadow: 5px 10px 8px #1b1b1b;          
+            
+            text-decoration: none;
+            font-size: 4vw;
+            font-family: 'Cinzel Decorative', cursive;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            
+            animation-name: go;
+            animation-duration: 1.5s;
+            animation-delay: -1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+           
+        }
+        .banner>a:hover{
+        animation-play-state:paused;
+        }
+
+        /* animation */
+        @keyframes h1 {
+            0% {
+                color: #fff;
+                padding-top: 28vw;
+                padding-left: 10vw;
+            }
+            100% {
+                color: rgb(93,13,11);
+                padding-top: 22vw;
+                padding-left: 10vw;
+            }
+        }
+        @keyframes h2 {
+            0% {
+                color: #fff;
+                padding-top: 0vw;
+                padding-left: 10vw;
+            }
+            100% {
+                color: rgb(93,13,11);
+                padding-top: 0vw;
+                padding-left: 10vw;
+            }
+        }
+        
+        @keyframes go{
+            0% { 
+                left: 39vw;           
+                opacity: 0;
+            }
+            100% {  
+                left: 41vw;           
+                opacity: 1;
+            }
+        }
+        @keyframes h1_mobile {
+            0% {
+                color: #11335433;
+                padding-top: 66vw;
+                padding-left: 10vw;
+            }
+            100% {
+                color: rgb(93,13,11);
+                padding-top: 60vw;
+                padding-left: 10vw;
+            }
+        }
+
+/* mobile mode */
+
+@media (max-width: 700px) {
+    .banner{
+            height: 100vw;
+            background-attachment: scroll;
+            background-image:url("used_photo/banner_mobile.jpg");}
+        h1{
+            font-size: 8vw;
+            padding-top: 60vw;
+            padding-left: 10vw;
+            animation-name: h1_mobile;
+            animation-duration: 5s;
+            animation-delay: -1s;
+            animation-timing-function: ease;          
+        }        
+        h2{
+            font-size: 4vw;
+            padding-left: 10vw;           
+        }
+        .banner>a {            
+            position: relative;            
+            left: 39vw;
+            padding:0 1vw;                       
+            font-size: 4vw;          
+            }
+        .SDC{           
+            width:50px;
+            height:83.33px;
+            }
+        .icon>a>i {           
+            font-size: 25px;         
+        }
+}
+        
+
+
+
+
+

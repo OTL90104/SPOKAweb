@@ -1,0 +1,41 @@
+        *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        font-family: Microsoft JhengHei, sans-serif;
+        user-select:none;
+        text-decoration: none;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #ffffff00; 
+        }
+ 
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+           background: rgba(93, 12, 11, 0.301); 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+         background: rgb(93,13,11); 
+        }
+       
+        .container{
+            margin: 0px 20px;
+            background-image: url("used_photo/homecontainer.jpg");
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: repeat-y;
+            background-attachment: scroll;
+        }
+        
+
+
+
+

@@ -1,0 +1,219 @@
+    
+        /* content */
+        .card{
+            padding:20px;
+            margin: 10px;
+            background-color: rgba(233, 188, 136, 0.8);
+            border-radius: 5px;
+        }
+      
+
+        /* the column at the left side */
+        .leftcolumn{
+            width:75%;
+            float: left;
+        }  
+        .topcolumn{
+            width:98%;
+            float: left;
+        }
+        .leftcolumn .card{
+            line-height: 1.5;
+            font-size:20px;
+            animation-name: leftcolumncard;
+            animation-duration: 4s;
+            animation-delay: -1s;
+            animation-timing-function: ease;
+        }
+        .cardzone{
+            width: 100%;
+            background:none;
+            overflow: auto ;
+        }
+        .cardlet{
+            margin: 25px 1.6666666666666666666666666666666666666666666666666666%;
+            width: 30%;
+          
+            float: left;
+            height: auto;
+            text-align: center;
+            background-color: rgba(233, 188, 136,1);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            overflow: hidden;
+        }
+        .cardpicture {
+            width: 100%;
+            height:300px;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .cardcontent {
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            background-color: rgba(233, 188, 136, 0.8);
+            color: rgb(18, 52, 86);
+            text-decoration: none;
+            line-height: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            transition: color 1s;
+        }
+
+        .cardimage {
+            width: 100%;
+            height:100%;
+            transition: all 2s;
+        }
+
+        .cardlet:hover .cardpicture>a>img {
+            transform: scale(1.2);
+        }
+
+        .cardlet:hover .cardcontent {
+            color: rgb(93,13,11);
+            font-weight: 700;
+        }
+
+        @media (max-width: 1000px) {
+            .cardzone {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .cardlet {
+                width: 100%;
+                margin-top: 25px;
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+            }
+        }
+        @keyframes leftcolumncard {
+            0% {               
+                margin-top: 50px;
+            }
+            100% {                
+                margin-top: 10px;
+            }
+        }
+
+
+
+        /* the column at the right side */
+        .rightcolumn{
+            width:25%;
+            float: left;
+            text-align: center;
+        }
+        .rightcolumn .card{
+            -webkit-transition: height 1s;
+            /* For Safari 3.1 to 6.0 */
+            transition: height 1s, background 1s;
+            overflow: hidden;
+            height: 60px;
+            animation-name: rightcolumncard;
+            animation-duration: 4s;
+            animation-delay: -1s;
+            animation-timing-function: ease;
+        }  
+        .rightcolumn .card a:hover{
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+                   }         
+        .rightcolumn .card:nth-child(1):hover {           
+            background: rgb(233, 187, 136);
+            height: 460px;
+        }
+        .rightcolumn .card:nth-child(2):hover {           
+            background: rgb(233, 187, 136);
+            height: 480px;
+        }
+        .rightcolumn .card:nth-child(3):hover {           
+            background: rgb(233, 187, 136);
+            height: 220px;
+        }
+        .rightcolumn .card:nth-child(4):hover {           
+            background: rgb(233, 187, 136);
+            height: 400px;
+        }
+        .rightcolumn .card:nth-child(3) img:hover {           
+            transform: scale(1.2);
+        }
+        
+        textarea {
+    width: 100%;
+    height:50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    background-color: rgb(233, 187, 136);
+    background-image: url('used_photo/SDC.gif');
+    background-size:auto 30px; 
+    background-position: 8px 4px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+}
+
+textarea:focus {
+    height: 300px;
+}
+        
+        
+        
+        /* recently news 2018.3.13*/
+        #beethoven_10_sonatas{ 
+            width:100%
+        }
+        @keyframes rightcolumncard {
+            0% {               
+                margin-top: 50px;
+            }
+            100% {                
+                margin-top: 10px;
+            }
+        }
+
+
+        /* tablet mode */
+        @media (max-width: 955px){
+        .pagetitle{
+            width:100px;
+            height:12px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        /* the change of the rightcolumn */
+        .rightcolumn, .leftcolumn{
+            float:none;
+            width:100%;            
+        }
+        .rightcolumn p{
+            text-align: center;
+        }       
+        #beethoven_10_sonatas{
+            width: 100%;
+            max-width: 250px;
+        } 
+        .rightcolumn .card:nth-child(1):hover {           
+            background: rgb(233, 187, 136);
+            height: 460px;
+        }
+        .rightcolumn .card:nth-child(2):hover {           
+            background: rgb(233, 187, 136);
+            height: 480px;
+        }
+        }
+
+       
+
+

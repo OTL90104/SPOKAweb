@@ -1,0 +1,41 @@
+       
+        /* footer */
+        .footer{
+            clear:both;
+            text-align: center;
+            background-color: rgba(18, 52, 86, 0.89);
+            padding: 20px 30px 30px 30px;
+            color: white;
+        }
+        .footericon>a>i {
+            margin: 10px 10px;
+            font-size: 32px;           
+            text-decoration: none;
+            color: white;            
+        }
+        .footericon>a:nth-child(1) i:hover {
+            color: rgb(64,93,155);
+            transform: scale(1.5);
+        }
+        .footericon>a:nth-child(2) i:hover {
+            color: rgb(29,161,242);
+            transform: scale(1.5);       
+        }
+        .footericon>a:nth-child(3) i:hover {
+            color: rgb(3, 185, 0);
+            transform: scale(1.5);         
+        }
+        .footericon>a:nth-child(4) i:hover {
+            color: white;
+            transform: scale(1.5);         
+        }
+        .footericon>a:nth-child(5) i:hover {
+            transform: scale(1.5);
+            color:white;
+            border-radius: 18.5%;
+            background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);         
+        }
+
+
+
+

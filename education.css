@@ -1,0 +1,43 @@
+      
+        .titlepicture{
+            width: 100%;
+            height:42vw;          
+            background-image:url("used_photo/titlepicture_education.jpg");
+            background-size: 100% 100%;  
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+        .pagetitle{
+            width: 10.5vw;
+            height:1.5vw;
+            color: white;
+            font-size: 1.25vw;
+            line-height: 1.5vw;
+            background-color: rgba(93, 12, 11, 0.705);
+            position: absolute; 
+            right:20px;
+        }
+        .pagetitle a{
+            color: white;
+        }
+        .pagetitle a:hover{
+            color: rgba(233, 188, 136, 0.8)
+        }
+
+    
+
+        /* tablet mode */
+        @media (max-width: 955px){
+        .pagetitle{
+            width:100px;
+            height:12px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+       
+        }
+
+        
+
+
+
